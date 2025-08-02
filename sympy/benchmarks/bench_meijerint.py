@@ -38,7 +38,7 @@ def exponential(x, rate):
     return rate*exp(-rate*x)
 alpha, beta = symbols('alpha beta', positive=True)
 betadist = x**(alpha - 1)*(1 + x)**(-alpha - beta)*gamma(alpha + beta) \
-    /gamma(alpha)/gamma(beta)
+/gamma(alpha)/gamma(beta)
 kint = Symbol('k', integer=True, positive=True)
 chi = 2**(1 - kint/2)*x**(kint - 1)*exp(-x**2/2)/gamma(kint/2)
 chisquared = 2**(-k/2)/gamma(k/2)*x**(k/2 - 1)*exp(-x/2)
